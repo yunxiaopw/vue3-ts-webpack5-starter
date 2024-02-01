@@ -1,0 +1,61 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import './element.less';
+
+@screen sm {
+  /* 自定义 sm 断点的最小宽度阈值 */
+  min-width: 576px;
+}
+
+@screen md {
+  /* 自定义 md 断点的最小宽度阈值 */
+  min-width: 768px;
+}
+
+@screen lg {
+  /* 自定义 lg 断点的最小宽度阈值 */
+  min-width: 992px;
+}
+
+@screen xl {
+  /* 自定义 xl 断点的最小宽度阈值 */
+  min-width: 1200px;
+}
+
+@screen 2xl {
+  /* 自定义 2xl 断点的最小宽度阈值 */
+  min-width: 1440px;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  scroll-behavior: smooth;
+  background-color: #fff;
+}
+
+#app {
+  height: 100%;
+  width: 100%;
+}
+
+// 自定义滚动条
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #232323;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #666;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #999;
+}
+
